@@ -4,7 +4,7 @@
 
 ## 📌 Table of Contents  
 
-1. [System Requirements]((https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-system-requirements))  
+1. [System Requirements]((https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-system-requirements)
 2. [Installation](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-installation))  
    - [Dependencies](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-dependencies) 
    - [Setup](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#%EF%B8%8F-setup) 
@@ -40,6 +40,7 @@ sudo dnf install python3 python3-pip cmake gcc-c++ make pipewire pulseaudio-util
 ```
 Clone the proyect 
 ```bash
+git clone https://github.com/jrodriiguezg/SoundGaze.git && cd SoundGaze
 ```
 Then, install the required Python libraries:
 ```bash 
