@@ -6,13 +6,13 @@
 
 1. [System Requirements]((https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-system-requirements))  
 2. [Installation](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-installation))  
-   - [Dependencies](##dependencies)  
-   - [Setup](##setup)  
-3. [Usage](##usage)  
-   - [Get the Audio Sink ID](##get-the-audio-sink-id)
-   - [Set the Sink ID]() 
-   - [Run the System](##run-the-system)  
-4. [How It Works](##how-it-works)  
+   - [Dependencies](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-dependencies) 
+   - [Setup](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#%EF%B8%8F-setup) 
+3. [Usage](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-usage) 
+   - [Get the Audio Sink ID](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#%EF%B8%8F-get-the-audio-sink-id)
+   - [Set the Sink ID](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-set-the-sink-id-in-soundgaze)
+4. [Run the System](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#%EF%B8%8F-run-the-system)
+ 
  
  
 
