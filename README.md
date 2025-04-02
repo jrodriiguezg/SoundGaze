@@ -4,20 +4,20 @@
 
 ## 📌 Table of Contents  
 
-1. [System Requirements](#system-requirements)  
-2. [Installation](#installation)  
-   - [Dependencies](#dependencies)  
-   - [Setup](#setup)  
-3. [Usage](#usage)  
-   - [Get the Audio Sink ID](#get-the-audio-sink-id)  
-   - [Run the System](#run-the-system)  
-4. [How It Works](#how-it-works)  
-5. [Troubleshooting](#troubleshooting)  
-6. [Contributing](#contributing)  
+1. [System Requirements](##system-requirements)  
+2. [Installation](##installation)  
+   - [Dependencies](##dependencies)  
+   - [Setup](##setup)  
+3. [Usage](##usage)  
+   - [Get the Audio Sink ID](##get-the-audio-sink-id)  
+   - [Run the System](##run-the-system)  
+4. [How It Works](##how-it-works)  
+ 
+ 
 
 ---
 
-## 🔧 System Requirements  
+## 🔧 System-Requirements  
 
 To run **SoundGaze**, you need:  
 
@@ -96,7 +96,7 @@ def get_current_audio_sink_id():
     return "52"  # Change this to your sink ID
 ```
 Replace "52" with the correct sink ID for your system.
-▶️ Run the System
+▶️ Run-the-System
 
 To start head tracking and audio adjustment, run:
 ```bash
@@ -109,10 +109,3 @@ The program will:
 ✔️ Adjust audio balance dynamically
 
 To stop the program, press Ctrl + C.
-🔄 Restoring Audio Levels
-
-When SoundGaze exits, it automatically restores the original audio levels. If something goes wrong, manually reset the volume:
-```bash
-pactl set-sink-volume <SINK_ID> 100%
-```
-Replace <SINK_ID> with your correct sink number.
