@@ -69,27 +69,18 @@ systemctl --user start pulseaudio
 ```
 ## 🎯 Usage
 ### 🎚️ Get the Audio Sink ID
-SoundGaze controls audio balance by modifying the audio sink volume. To get your sink ID, run:
 ```bash
-pactl list sinks | grep "Sink #"
-```
-The ID is a number like 52 or 53.
-
-📌 Example output:
-```bash
-Sink #53
-        State: RUNNING
-```
-Here, the sink ID is 53.
-
-If multiple audio devices are connected, list them with:
-```bash
-pactl list short sinks
+wpctl status
 ```
 📌 Example output:
 ```bash
-53  alsa_output.pci-0000_00_1b.0.analog-stereo
+Sinks:
+ │      63. Family 17h/19h/1ah HD Audio Controller Speaker [vol: 0.00 MUTED]
+ │  *   75. Razer USB Sound Card Estéreo analógico [vol: 0.99]
+
 ```
+You have to look at the Sinks section and the one with the *
+
 ### 🛠 Set the Sink ID in SoundGaze
 
 In the audio handling script (audio.py), locate the function:
