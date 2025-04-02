@@ -4,12 +4,13 @@
 
 ## 📌 Table of Contents  
 
-1. [System Requirements](##system-requirements)  
-2. [Installation](##installation)  
+1. [System Requirements]((https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-system-requirements))  
+2. [Installation](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-installation))  
    - [Dependencies](##dependencies)  
    - [Setup](##setup)  
 3. [Usage](##usage)  
-   - [Get the Audio Sink ID](##get-the-audio-sink-id)  
+   - [Get the Audio Sink ID](##get-the-audio-sink-id)
+   - [Set the Sink ID]() 
    - [Run the System](##run-the-system)  
 4. [How It Works](##how-it-works)  
  
@@ -53,7 +54,7 @@ Download it here:
 
 [🔗 Download Model](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat)
 
-⚙️ Setup
+## ⚙️ Setup
 
 Ensure PipeWire and PulseAudio are running. Check their status with:
 ```bash
@@ -65,8 +66,8 @@ If they are not running, start them manually:
 systemctl --user start pipewire
 systemctl --user start pulseaudio
 ```
-🎯 Usage
-🎚️ Get the Audio Sink ID
+## 🎯 Usage
+### 🎚️ Get the Audio Sink ID
 SoundGaze controls audio balance by modifying the audio sink volume. To get your sink ID, run:
 ```bash
 pactl list sinks | grep "Sink #"
@@ -88,7 +89,7 @@ pactl list short sinks
 ```bash
 53  alsa_output.pci-0000_00_1b.0.analog-stereo
 ```
-🛠 Set the Sink ID in SoundGaze
+### 🛠 Set the Sink ID in SoundGaze
 
 In the audio handling script (audio.py), locate the function:
 ```python
@@ -96,7 +97,7 @@ def get_current_audio_sink_id():
     return "52"  # Change this to your sink ID
 ```
 Replace "52" with the correct sink ID for your system.
-▶️ Run-the-System
+## ▶️ Run-the-System
 
 To start head tracking and audio adjustment, run:
 ```bash
