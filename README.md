@@ -46,10 +46,7 @@ Then, install the required Python libraries:
 ```bash 
 pip install -r requirements.txt
 ```
-⚠️ Note: dlib may require CMake and a C++ compiler:
-```bash
-sudo dnf install cmake g++ make
-```
+
 You also need the dlib facial landmark model (shape_predictor_68_face_landmarks.dat).
 Download it here:
 
