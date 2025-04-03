@@ -1,14 +1,28 @@
 import time
 import subprocess
 import math
+ 
 
 # Global variables
 current_yaw = 0.0
 current_pitch = 0.0
+sinkid = 0 
 
 # Smoothed volume
 smooth_left_volume = 0.5
 smooth_right_volume = 0.5
+
+# Execute the command
+command = "wpctl status | grep -A 5 'Sinks:'"
+result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+
+# Display the output on the screen
+if result.returncode == 0:
+    print("Command output:\n", result.stdout)
+else:
+    print(f"Error executing the command: {result.stderr}")
+
+sinkid = input("Introduce sink id ")
 
 def update_audio_values(yaw, pitch):
     """Updates yaw and pitch values in the system."""
@@ -17,8 +31,8 @@ def update_audio_values(yaw, pitch):
     current_pitch = pitch
 
 def get_current_audio_sink_id():
-    """Returns the default audio sink ID (fixed at 52)."""
-    return "52"
+    """Returns the default audio sink ID."""
+    return sinkid
 
 def set_audio_sink_volume(sink_id, left_volume, right_volume):
     """Adjusts the left and right channel volumes in PipeWire."""
@@ -55,4 +69,4 @@ def change_audio_channels_based_on_head_movement():
         # Apply rapid changes
         set_audio_sink_volume(current_sink_id, smooth_left_volume, smooth_right_volume)
 
-        time.sleep(0.005)  # Low latency for near-instantaneous changes
+        time.sleep(0.002)  # Low latency for near-instantaneous changes
