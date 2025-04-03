@@ -22,7 +22,7 @@
 
 To run **SoundGaze**, you need:  
 
-- A **Linux-based system** with **PipeWire** and **PulseAudio**.  
+- A **Linux-based system** with **PipeWire**.  
 - A **working webcam**.  
 - Python **3.6**.  
 - A modern CPU (real-time processing requires good performance).  
