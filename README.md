@@ -106,7 +106,7 @@ To stop the program, press Ctrl + C.
 ## 🔧 Tweaks 
 - You can ajust the time the script changue the volume of the outputs, on audio.py go to the last line, and change the time.sleep
   (It is not recommended to go below 0.001 due to pipewire limitations and high CPU consumption.)
-- You can define the volume you want the program to leave in the system when it exits, on soundgaze.py, on the variable
+- You can define the volume you want the program to leave in the system when it exits, on audio.py, on the variable
 ```python
    original_volume = None
 ```
