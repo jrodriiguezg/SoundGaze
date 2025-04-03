@@ -12,10 +12,10 @@
    - [Get the Audio Sink ID](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#%EF%B8%8F-get-the-audio-sink-id)
    - [Set the Sink ID](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-set-the-sink-id-in-soundgaze)
 4. [Run the System](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#%EF%B8%8F-run-the-system)
+5. [Tweaks](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-tweaks)
  
  
  
-
 ---
 
 ## 🔧 System-Requirements  
@@ -24,7 +24,7 @@ To run **SoundGaze**, you need:
 
 - A **Linux-based system** with **PipeWire** and **PulseAudio**.  
 - A **working webcam**.  
-- Python **3.7** or later.  
+- Python **3.6**.  
 - A modern CPU (real-time processing requires good performance).  
 **!!!Tested only on Fedora 41!!!!**
 ---
@@ -54,7 +54,7 @@ Download it here:
 
 ## ⚙️ Setup
 
-Ensure PipeWire and PulseAudio are running. Check their status with:
+Ensure PipeWire  are running. Check their status with:
 ```bash
 systemctl --user status pipewire
 systemctl --user status pulseaudio
@@ -66,6 +66,9 @@ systemctl --user start pulseaudio
 ```
 ## 🎯 Usage
 ### 🎚️ Get the Audio Sink ID
+
+When you start the script it will automatically ask you for the sinkid and will show you the available ones, if not work you can do manually
+
 ```bash
 wpctl status
 ```
@@ -83,9 +86,9 @@ You have to look at the Sinks section and the one with the *
 In the audio handling script (audio.py), locate the function:
 ```python
 def get_current_audio_sink_id():
-    return "52"  # Change this to your sink ID
+    return sinkid  # Change this to your sink ID
 ```
-Replace "52" with the correct sink ID for your system.
+Replace "sinkid" with the correct sink ID for your system.
 ## ▶️ Run-the-System
 
 To start head tracking and audio adjustment, run:
@@ -99,3 +102,13 @@ The program will:
 ✔️ Adjust audio balance dynamically
 
 To stop the program, press Ctrl + C.
+
+## 🔧 Tweaks 
+- You can ajust the time the script changue the volume of the outputs, on audio.py go to the last line, and change the time.sleep
+  (It is not recommended to go below 0.001 due to pipewire limitations and high CPU consumption.)
+- You can define the volume you want the program to leave in the system when it exits, on soundgaze.py, on the variable
+```python
+   original_volume = None
+```
+
+  
