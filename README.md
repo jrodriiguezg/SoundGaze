@@ -13,7 +13,7 @@
    - [Set the Sink ID](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-set-the-sink-id-in-soundgaze)
 4. [Run the System](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#%EF%B8%8F-run-the-system)
 5. [Tweaks](https://github.com/jrodriiguezg/SoundGaze/tree/main?tab=readme-ov-file#-tweaks)
-6. Wiki:
+6. [Wiki](https://github.com/jrodriiguezg/SoundGaze/wiki):
      - [English](https://github.com/jrodriiguezg/SoundGaze/wiki/English-%E2%80%90-Ingles)
      - [Español](https://github.com/jrodriiguezg/SoundGaze/wiki/Espa%C3%B1ol-%E2%80%90-Spanish)
  
