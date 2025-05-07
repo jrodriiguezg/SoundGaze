@@ -29,7 +29,7 @@ To run **SoundGaze**, you need:
 - A **working webcam**.  
 - Python **3.6**.  
 - A modern CPU (real-time processing requires good performance).  
-**!!!Tested only on Fedora 41!!!!**
+**!!!Tested only on Fedora 41 with Gnome!!!!**
 ---
 
 ## 📥 Installation  
